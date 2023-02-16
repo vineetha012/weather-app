@@ -19,7 +19,7 @@ export const Search = () => {
     return (
         <>
             <Nav />
-            <div>
+            <div className='search-container'>
                 <form onSubmit={(e) => onSubmitHanler(e)}>
                     <input type={'text'} className="citynameInput" placeholder='City' onChange={(e) => setSerachQuery(e.target.value)} />
                     <button type='submit'>check temperature</button>
