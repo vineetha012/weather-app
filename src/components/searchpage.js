@@ -5,16 +5,27 @@ import { Nav } from './nav'
 import { MainBody } from './mainBody'
 export const Search = () => {
     const [searchQuery, setSerachQuery] = useState("")
-    const { currentLocation,setCurrentLocation,
-        serchedlocation,setSearchedLocation,
-        details,setdetails,
-        likedLocations,setLikedLocations } = useContext(WetherStateContext)
+    const { currentLocation, setCurrentLocation,
+        serchedlocation, setSearchedLocation,
+        details, setdetails,
+        likedLocations, setLikedLocations } = useContext(WetherStateContext)
     const onSubmitHanler = (e) => {
         e.preventDefault()
-        Searchweather(searchQuery).then(data=>{
-            setSearchedLocation(data)
-            setdetails(data)
-        })
+        if (searchQuery) {
+            Searchweather(searchQuery).then(data => {
+                console.log(data.cod)
+                if (data.cod == 200) {
+                    setSearchedLocation(data)
+                    setdetails(data)
+                }else{
+                    alert(data.message)
+                    setSearchedLocation(null)
+                }
+
+            })
+        } else {
+            alert("please provide city")
+        }
     }
     return (
         <>
@@ -25,7 +36,7 @@ export const Search = () => {
                     <button type='submit'>check temperature</button>
                 </form>
             </div>
-           {serchedlocation? <MainBody currentLocation={serchedlocation}/>:""}
+            {serchedlocation ? <MainBody currentLocation={serchedlocation} /> : ""}
         </>
     )
 }
