@@ -1,101 +1,9 @@
-
 .rows {
   display: flex;
   flex-direction: row;
 }
 
-@media screen and (max-width: 500px) {
-  body {
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-image: url("./components/images/sky1.jpeg");
-    background-repeat: no-repeat;
 
-  }
-
-  .mainhome {
-    /* background-color: aquamarine; */
-    width: 400px;
-    height: 400px;
-  }
-  .navbar{
-    justify-content: space-between;
-    align-items: center;
-  }
- .btns button{
-    height: 30px;
-    margin-left:10px ;
-  }
-  /* navbar */
-  .navbar h1 {
-    color: white;
-  }
-
-  /* mainbody */
-  .upper-container {
-    color: white;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-   
-  }
-  .buttons{
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px 20px 5px 20px;
-    border-top: 1px solid gray;
-  }
-  .main-temperature {
-    text-align: center;
-  }
-
-  .main-temperature h1 {
-    margin: 0;
-  }
-
-  .bottom-container {
-    width: 100%;
-  }
-
-  .windcont {}
-
-  .prop {
-    text-align: center;
-    font-size: larger;
-    display: flex;
-    color: aliceblue;
-    flex-direction: column;
-    margin-left: 40px;
-    margin-top: 30px;
-  }
-
-  /* forcast */
-  .forcast {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    margin-top: 20px;
-    color: white;
-  }
-  .colus{
-    display: flex;
-    flex-direction: column;
-    margin:30px 10px 30px 20px;
-    font-size: 20px;
-  }
-  .buttons button{
-    width: 100px;
-    height: 40px;
-    font-size: 20px;
-    border-radius: 10px;
-  }
-  .buttons button:hover{
-    background-color: rgb(70, 190, 192);
-  }
-}
 
 body {
   width: 100vw;
@@ -105,22 +13,26 @@ body {
   background-repeat: no-repeat;
 
 }
-.mainbody{
+
+.mainbody {
   width: 100vw;
   justify-content: center;
 
 }
+
 .mainhome {
   /* background-color: aquamarine; */
   width: 400px;
   height: 400px;
 }
-.navbar{
+
+.navbar {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid gray;
 }
-.btns button{
+
+.btns button {
   height: 40px;
   width: 100px;
   border-radius: 10px;
@@ -128,9 +40,11 @@ body {
   margin-right: 10px;
 
 }
-.btns button:hover{
+
+.btns button:hover {
   background-color: cornflowerblue;
 }
+
 /* navbar */
 .navbar h1 {
   color: white;
@@ -143,9 +57,10 @@ body {
   height: 100px;
   display: flex;
   justify-content: center;
- 
+
 }
-.buttons{
+
+.buttons {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
@@ -153,15 +68,18 @@ body {
   padding: 15px 100px 5px 100px;
 
 }
-.buttons button{
+
+.buttons button {
   width: 100px;
   height: 40px;
   font-size: 20px;
   border-radius: 10px;
 }
-.buttons button:hover{
+
+.buttons button:hover {
   background-color: rgb(70, 190, 192);
 }
+
 .main-temperature {
   text-align: center;
   font-size: 30px;
@@ -179,9 +97,7 @@ body {
   justify-content: center;
 }
 
-.windcont {
-
-}
+.windcont {}
 
 .prop {
   text-align: center;
@@ -192,7 +108,7 @@ body {
   margin-left: 70px;
   margin-top: 150px;
   font-size: 25px;
-  
+
 }
 
 /* forcast */
@@ -201,20 +117,22 @@ body {
   border-bottom: 1px solid white;
   margin-top: 20px;
   color: rgb(219, 218, 229);
-  width:600px;
+  width: 600px;
   justify-content: center;
 
 }
-.colus{
+
+.colus {
   display: flex;
   flex-direction: column;
-  margin:30px 10px 30px 20px;
+  margin: 30px 10px 30px 20px;
   font-size: 30px;
-  font:bolder ;
+  font: bolder;
 
 
 }
-.detail-container{
+
+.detail-container {
   width: 100%;
   display: flex;
   justify-content: center;
